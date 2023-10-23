@@ -1,0 +1,19 @@
+1. declare global variable like: head , tail , ans, operation_var
+
+2. use some data structure according to question requirement: map ,vector etc ( to store frequency)
+
+3. Put for loop using head variable to s whole window
+
+4. perform operation (asked in question)
+
+5. if ans become invalid then go inside while loop to make it valid
+
+6. inside while loop exclude the values using tail variable & update tail variable
+
+7. update ans and finally return ans
+
+
+
+
+
+

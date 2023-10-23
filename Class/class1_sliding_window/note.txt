@@ -1,0 +1,12 @@
+ > two pointer
+ > slow and fast pointer
+
+ > sliding window
+
+ p1=> maximum sum of subarray of size k
+
+ p2 => 1st negative number from k size subarray
+
+ p3 => count of anagrams
+    
+    anagram -> 

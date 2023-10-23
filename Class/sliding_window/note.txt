@@ -1,0 +1,11 @@
+// fixed
+1. max min sub array of size k
+2. 1st -ve in every sub array size of k
+3. count oceurance of anagams
+4. max of all subarray of size k
+5. max of min for every window size
+
+// variable
+1. longest /smallest subarray of sum k
+2. largest sub-string 7 k distinct char
+3. largest 
