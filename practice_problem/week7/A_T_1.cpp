@@ -8,21 +8,31 @@ typedef long long ll ;
 #define yes cout<<"YES"<<nl
 #define no  cout<<"NO"<<nl
 #define    error  cout<<-1<<nl
+# define srt(v) sort((v).begin() , (v).end())
+# define rvr(v) reverse(srt(v))
 # define all(v) (v).begin() , (v).end()
 # define FAST ios_base :: sync_with_stdio (false) ; cin.tie(0) ; cout.tie(0)
  
 void solve (int t) {
-  ll n;
-  cin>>n;
-  if(n%3==0)cout<<"Second"<<endl;
-  else{cout<<"First"<<endl;
-  }
+   ll n,a,b,p,q;
+   cin>>n>>a>>b>>p>>q;
+   ll ans1= n/a;
+   ll ans2= n/b;
+   ll ans3= n/lcm(a,b);
+   if(p>q){
+     ans2-=ans3;
+   }
+   else{
+    ans1-=ans3;
+   }
+   ll tAns  = ans1*p + ans2*q;
+   cout<<tAns<<endl;
 }
 
 int main() {
    FAST ;
    int t = 1 ;
-   cin >> t ;
+//    cin >> t ;
    while (t--) {
    solve (t) ;
   }

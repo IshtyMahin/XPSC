@@ -8,15 +8,19 @@ typedef long long ll ;
 #define yes cout<<"YES"<<nl
 #define no  cout<<"NO"<<nl
 #define    error  cout<<-1<<nl
+# define srt(v) sort((v).begin() , (v).end())
+# define rvr(v) reverse(srt(v))
 # define all(v) (v).begin() , (v).end()
 # define FAST ios_base :: sync_with_stdio (false) ; cin.tie(0) ; cout.tie(0)
  
 void solve (int t) {
-  ll n;
-  cin>>n;
-  if(n%3==0)cout<<"Second"<<endl;
-  else{cout<<"First"<<endl;
-  }
+  string s;
+  cin>>s;
+  ll n = s[0]-'0';
+  ll ans= (n-1)*10;
+  ll p = s.size();
+  ans+= (p*(p+1))/2;
+  cout<<ans<<endl;
 }
 
 int main() {
