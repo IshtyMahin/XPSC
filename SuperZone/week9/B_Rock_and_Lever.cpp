@@ -19,17 +19,17 @@ void solve (int t) {
        vector<ll>v(n);
        vector<ll>cnt(32,0);
        ll p=0;
+       map<int,int>mp;
        for(ll i=0;i<n;i++){
           cin>>v[i];
-          int x= __builtin_clz(v[i]);
-          cnt[x]++;
+          int x= __builtin_clz(v[i]);// binary length of v[i] , ex: 7(111)=3 , 3(11)=2, 9(1001)=4
+          
+          if(mp[x]){
+            p+=mp[x];
+          }
+          mp[x]++;
        }
 
-       for(ll i=0;i<32;i++){
-          if(cnt[i]){
-            p+=(cnt[i]*(cnt[i]-1))/2;
-          }
-       }
        cout<<p<<endl;
 }
 
